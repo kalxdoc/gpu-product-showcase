@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPU Product Card</title>
+    
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <div class="sort-container">
+        <select id="sort-price">
+            <option value="default">Sort by Price</option>
+            <option value="low-high">Price: Low to High</option>
+            <option value="high-low">Price: High to Low</option>
+        </select>
+    </div>
+
+    <div class="card-container">
+        
+        <div class="product-card nvidia">
+            <div class="card-image">
+                <img src="https://www.ucc.com.bd/image/cache/catalog/graphics-card/msi/GeForce%20RTX%204070%20SUPER%2012G%20GAMING%20X%20SLIM/1-1100x1100w.png.webp" alt="RTX 4070">
+            </div>
+            
+            <div class="card-details">
+                <span class="tag stock-in">In Stock</span>
+                <h2>RTX 4070 Super</h2>
+                <p class="description">
+                    12GB GDDR6X, Triple Fan Cooling. Perfect for 1440p gaming.
+                </p>
+                <div class="price">৳ 85,000</div>
+                <button class="btn-buy">Add to Build</button>
+            </div>
+        </div>
+
+        <div class="product-card amd">
+            <div class="card-image">
+                <img src="https://www.amd.com/content/dam/amd/en/images/products/graphics/radeon-rx-9070/2922918-radeon-rx-9070xt-product.jpg" alt="RX 7800 XT">
+            </div>
+            
+            <div class="card-details">
+                <span class="tag stock-low">Low Stock</span>
+                <h2>RX 7800 XT</h2>
+                <p class="description">
+                    16GB GDDR6, High Performance. Great for rasterization.
+                </p>
+                <div class="price">৳ 72,000</div>
+                <button class="btn-buy">Add to Build</button>
+            </div>
+        </div>
+        <div class="product-card nvidia">
+            <div class="card-image">
+                <img src="https://storage-asset.msi.com/global/picture/image/feature/vga/NVIDIA/GB206-300-16G-GAMING-OC/kv_vga.png" alt="RTX 5060 Ti Image">
+            </div>
+            <div class="card-details">
+                <span class="tag stock-low">Low Stock</span>
+                <h2>RTX 5060 Ti</h2>
+                <p class="description">
+                    16GB GDDR6, High Performance. Great for rasterization.
+                </p>
+                <div class="price">৳ 62,000</div>
+                <button class="btn-buy">Add to Build</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
