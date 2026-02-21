@@ -151,3 +151,61 @@ h2 {
     cursor: pointer;
     background-color: white;
 }
+
+/* 8. THEME TOGGLE */
+.theme-toggle-container {
+    width: 100%;
+    max-width: 940px;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+#theme-toggle-btn {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: white;
+}
+
+/* 9. DARK MODE */
+body.dark-mode {
+    background-color: #121212;
+    color: #fff;
+}
+
+body.dark-mode .product-card {
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode h2 {
+    color: #fff;
+}
+
+body.dark-mode .description {
+    color: #b0b0b0;
+}
+
+body.dark-mode .price {
+    color: #4caf50;
+}
+
+body.dark-mode .stock-in {
+    background-color: #2a3a4a;
+    color: #8ab4f8;
+}
+
+body.dark-mode .stock-low {
+    background-color: #4a3a2a;
+    color: #f8c98a;
+}
+
+body.dark-mode #sort-price,
+body.dark-mode #theme-toggle-btn {
+    background-color: #1e1e1e;
+    color: #fff;
+    border-color: #555;
+}

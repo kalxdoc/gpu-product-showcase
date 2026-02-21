@@ -5,6 +5,30 @@
 document.addEventListener('DOMContentLoaded', () => {
     const sortSelect = document.getElementById('sort-price');
     const container = document.querySelector('.card-container');
+    const themeToggleBtn = document.getElementById('theme-toggle-btn');
+    const body = document.body;
+
+    // Theme toggle logic
+    if (themeToggleBtn) {
+        themeToggleBtn.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            // Optional: Save theme preference to local storage
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('theme', 'dark');
+                themeToggleBtn.textContent = 'Toggle Light Mode';
+            } else {
+                localStorage.setItem('theme', 'light');
+                themeToggleBtn.textContent = 'Toggle Dark Mode';
+            }
+        });
+    }
+
+    // Optional: Check for saved theme preference on page load
+    if (localStorage.getItem('theme') === 'dark') {
+        body.classList.add('dark-mode');
+        if(themeToggleBtn) themeToggleBtn.textContent = 'Toggle Light Mode';
+    }
+
 
     // Ensure elements exist before running logic
     if (!sortSelect || !container) return;
