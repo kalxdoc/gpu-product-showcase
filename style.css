@@ -170,6 +170,33 @@ h2 {
     background-color: white;
 }
 
+.view-cart-link {
+    margin-left: 10px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    text-decoration: none;
+    background-color: #6200ea;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.view-cart-link:hover {
+    background-color: #3700b3;
+}
+
+body.dark-mode .view-cart-link {
+    background-color: #bb86fc;
+    color: #121212;
+    border-color: #555;
+}
+
+body.dark-mode .view-cart-link:hover {
+    background-color: #9965f4;
+}
+
 /* 9. DARK MODE */
 body.dark-mode {
     background-color: #121212;
